@@ -15,19 +15,18 @@ public class Task1 extends CommonMethods {
 		setUp();
 		
 	}
-//	@AfterMethod
-//	public void quiteBrowser() {
-//		wait(5);
-//		tearDown();
-//	}
+	@AfterMethod
+	public void quiteBrowser() {
+		wait(5);
+		tearDown();
+	}
 	@Test
 	public void validLogin() {
 		WebElement username=driver.findElement(By.xpath("//input[@id='txtUsername']"));
 		sendText(username, ConfigsReader.getProperty("username"));
 		WebElement password=driver.findElement(By.xpath("//input[@id='txtPassword']"));
 		sendText(password, ConfigsReader.getProperty("password"));
-		
-		 
+		   
 		driver.findElement(By.id("btnLogin")).click();
 	}
 	@Test
