@@ -12,15 +12,15 @@ import com.util.CommonMethods;
 public class AssertionDemo extends CommonMethods {
 	// This is also called Hard Assert
 
-	@BeforeMethod
-	public void openBrowserAndNavigate() {
-		setUp();
-	}
-
-	@AfterMethod
-	public void quitBrowser() {
-		tearDown();
-	}
+//	@BeforeMethod
+//	public void openBrowserAndNavigate() {
+//		setUp();
+//	}
+//
+//	@AfterMethod
+//	public void quitBrowser() {
+//		tearDown();
+//	}
 
 	// AssertionError is handled within TestNG
 	// Even if one Test Case fails, the others will executed

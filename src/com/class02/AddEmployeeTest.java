@@ -13,7 +13,7 @@ import com.pages.LoginPageElements;
 import com.util.CommonMethods;
 import com.util.ConfigsReader;
 
-public class HW extends CommonMethods {
+public class AddEmployeeTest extends CommonMethods {
 	
 	@BeforeMethod
 	public void NavigateToBrowser() {
@@ -48,8 +48,8 @@ public class HW extends CommonMethods {
 		AddEmployeePage addEmp=new AddEmployeePage();
 		login();
 		
-		addEmp.Hafiz.sendKeys("Hafiz");
-		addEmp.Qambari.sendKeys("Qambari");
+		addEmp.firstName.sendKeys("Hafiz");
+		addEmp.lastName.sendKeys("Qambari");
 		addEmp.upload.sendKeys("C:\\Users\\baria\\Desktop\\13680696_1022091924534829_5939108604780837596_n.jpg");
 		
 		addEmp.save.click();

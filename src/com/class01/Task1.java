@@ -10,16 +10,16 @@ import com.util.CommonMethods;
 import com.util.ConfigsReader;
 
 public class Task1 extends CommonMethods {
-	@BeforeMethod
-	public void navigateToBrowser() {
-		setUp();
-		
-	}
-	@AfterMethod
-	public void quiteBrowser() {
-		wait(5);
-		tearDown();
-	}
+//	@BeforeMethod
+//	public void navigateToBrowser() {
+//		setUp();
+//		
+//	}
+//	@AfterMethod
+//	public void quiteBrowser() {
+//		wait(5);
+//		tearDown();
+//	}
 	@Test
 	public void validLogin() {
 		WebElement username=driver.findElement(By.xpath("//input[@id='txtUsername']"));

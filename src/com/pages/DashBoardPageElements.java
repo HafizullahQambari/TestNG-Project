@@ -18,5 +18,11 @@ public class DashBoardPageElements {
 
 	public DashBoardPageElements() {
 		PageFactory.initElements(BaseClass.driver, this);
+		
+	}
+	public void navigateToAddEmployee() {
+		pim.click();
+		addEmp.click();
+		
 	}
 }

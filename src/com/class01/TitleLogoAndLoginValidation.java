@@ -1,5 +1,6 @@
 package com.class01;
 
+import org.testng.annotations.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.*;
@@ -10,15 +11,15 @@ import com.util.ConfigsReader;
 
 public class TitleLogoAndLoginValidation extends CommonMethods {
 
-	@BeforeMethod
-	public void openAndNavigate() {
-		setUp();
-	}
-
-	@AfterMethod
-	public void quitBrowser() {
-		tearDown();
-	}
+//	@BeforeMethod
+//	public void openAndNavigate() {
+//		setUp();
+//	}
+//
+//	@AfterMethod
+//	public void quitBrowser() {
+//		tearDown();
+//	}
 
 	// @Test
 	public void titleValidation() throws Exception {

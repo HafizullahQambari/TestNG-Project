@@ -5,17 +5,18 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.util.BaseClass;
+import com.util.CommonMethods;
 
-public class AddEmployeePage {
+public class AddEmployeePage extends CommonMethods {
 	
 	@FindBy (id="firstName")
-	public WebElement Hafiz;
+	public WebElement firstName;
 	
 	@FindBy (id="middleName")
-	public WebElement ullah;
+	public WebElement midName;
 	
 	@FindBy (id="lastName")
-	public WebElement Qambari;
+	public WebElement lastName;
 	
 	@FindBy (id="photofile")
 	public WebElement upload;
@@ -26,4 +27,6 @@ public class AddEmployeePage {
 	public AddEmployeePage() {
 		PageFactory.initElements(BaseClass.driver, this);
 	}
+	
+	
 }

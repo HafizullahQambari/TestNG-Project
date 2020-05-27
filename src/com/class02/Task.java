@@ -15,15 +15,15 @@ import com.util.CommonMethods;
 
 public class Task extends CommonMethods {
 	
-	@BeforeMethod
-	public void openBrowser() {
-		setUp();
-	}
-	@AfterMethod
-	public void closeBrowser() {
-		wait(3);
-	
-	}
+//	@BeforeMethod
+//	public void openBrowser() {
+//		setUp();
+//	}
+//	@AfterMethod
+//	public void closeBrowser() {
+//		wait(3);
+//	
+//	}
 	@Test 
 	public void logo() {
 		
