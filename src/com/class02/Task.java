@@ -35,8 +35,8 @@ public class Task extends CommonMethods {
 	SoftAssert a=new SoftAssert();
 	a.assertAll();
 	
-	login.username;
-	login.password;
+////	login.username;
+//	login.password;
 	
 	}
 	

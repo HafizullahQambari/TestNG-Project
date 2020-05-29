@@ -1,12 +1,19 @@
 package com.util;
 
+import java.io.File;
 import java.util.List;
 import java.util.Set;
 
+import javax.management.RuntimeErrorException;
+
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchFrameException;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -248,5 +255,23 @@ public class CommonMethods extends PageInitializer {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
+		
 	}
-}
+	/**
+	 * This Method will take a screenshot
+	 * 
+	 * @param filename
+	 */
+	public static void takeScreenshot(String filename) {
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		File file = ts.getScreenshotAs(OutputType.FILE);
+		try {
+			FileUtils.copyFile(file, new File("screenshot/" + filename + ".png"));
+		} catch (Exception ex) {
+			System.out.println("Cannot take screenshot!");
+		}
+	}
+
+    }
+
+

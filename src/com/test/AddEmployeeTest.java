@@ -9,7 +9,7 @@ public class AddEmployeeTest extends CommonMethods {
 	
 	@Test
 	public void addEmployeePage() {
-		login.login(ConfigsReader.getProperty("username"), ConfigsReader.getProperty("password"));
+		LoginTask.signin();
 		dash.navigateToAddEmployee();
 		
 	}

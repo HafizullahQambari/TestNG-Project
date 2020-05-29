@@ -28,8 +28,7 @@ public class LoginTest extends CommonMethods {
 	@Test
 	public void validuserName() {
 //		LoginPageElements login=new LoginPageElements();
-		login.login(ConfigsReader.getProperty("username"), ConfigsReader.getProperty("password"));
-//		sendText(login.username, ConfigsReader.getProperty("username"));
+		LoginTask.signin();
 //		sendText(login.password, ConfigsReader.getProperty("password"));
 		login.loginBtn.click();
 		

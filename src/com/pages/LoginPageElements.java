@@ -29,9 +29,9 @@ public class LoginPageElements extends CommonMethods {
 	public LoginPageElements() {
 		PageFactory.initElements(BaseClass.driver, this);
 	}
-	public void login(String uid, String pwd) {
-		sendText(username, uid);
-		sendText(password, pwd);
+	public void login() {
+		sendText(username, "Admin");
+		sendText(password, "Hum@nhrm123");
 		loginBtn.click();
 		
 		

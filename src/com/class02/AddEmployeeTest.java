@@ -15,11 +15,11 @@ import com.util.ConfigsReader;
 
 public class AddEmployeeTest extends CommonMethods {
 	
-	@BeforeMethod
-	public void NavigateToBrowser() {
-		
-		setUp();
-	}
+//	@BeforeMethod
+//	public void NavigateToBrowser() {
+//		
+//		setUp();
+//	}
 //	@AfterMethod
 //	public void closeBrowser() {
 //		tearDown();	
